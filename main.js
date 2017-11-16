@@ -9,12 +9,12 @@ const Main = (props) => {
 
     return (
         <div>
-            Testing React-Konva
-                <Rectangle />
-            <h1 style={{position: 'absolute', left: '180px'}}>Catan Board Testing</h1>
+            {/* Testing React-Konva */}
+                {/* <Rectangle /> */}
+            <h1 style={{ position: 'absolute', left: '180px' }}>Catan Board Testing</h1>
             <br />
-        <Hexagon />
-            </div>
+            <Hexagon />
+        </div>
     );
 };
 
