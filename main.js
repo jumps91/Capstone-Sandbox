@@ -5,6 +5,7 @@ import { Layer, Stage } from 'react-konva';
 // import Rectangle from './rectangle';
 import Hexagon from './hexagon';
 import Circles from './circles';
+import Roads from './roads';
 
 const Main = (props) => {
 
@@ -18,6 +19,7 @@ const Main = (props) => {
             <Stage width={700} height={640}>
                 <Hexagon />
                 <Circles />
+                <Roads />
             </Stage>
         </div>
     );
