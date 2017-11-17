@@ -3,26 +3,41 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Layer, Circle, Stage, Group, RegularPolygon } from 'react-konva';
+import { Circle, Layer } from 'react-konva';
 
-export class Hexagon extends Component {
+export class Intersection extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            image: null
+        };
+    }
+
+    componentDidMount() {
+        const image = new window.Image();
+        image.src = 'http://konvajs.github.io/assets/yoda.jpg';
+        image.onload = () => {
+            this.setState({
+                image: image
+            });
+        };
     }
 
     render() {
         return (
-            <Circle
-                x={250}
-                y={95}
-                radius={10}
-                fill={'black'}
-                shadowBlur={5}
-            />
+            <Layer>
+                <Circle
+                    x={60}
+                    y={60}
+                    radius={50}
+                    fill={'black'}
+                    fillPatternImage={this.image}
+                    shadowBlur={5}
+                />
+            </Layer>
         );
     };
 };
 
-export default Hexagon;
+export default Intersection;

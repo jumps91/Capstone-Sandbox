@@ -6,9 +6,9 @@ import { Layer, Stage } from 'react-konva';
 import Hexagon from './hexagon';
 import Circles from './circles';
 import Roads from './roads';
+import Intersection from './intersection1';
 
 const Main = (props) => {
-
 
     return (
         <div>
@@ -20,6 +20,7 @@ const Main = (props) => {
                 <Hexagon />
                 <Circles />
                 <Roads />
+                <Intersection />
             </Stage>
         </div>
     );
