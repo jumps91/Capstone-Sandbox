@@ -5,7 +5,7 @@ import { Layer, Rect, Stage, Group } from 'react-konva';
 const Rectangle = (props) => {
 
     return (
-        <Stage width={700} height={200}>
+        <Stage id={'stage'} name={'stage'} width={700} height={200}>
             <Layer>
                 {/* first main row */}
                 <Rect
